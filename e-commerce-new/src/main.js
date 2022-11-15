@@ -4,6 +4,7 @@ import router from './router'
 import PrimeVue from 'primevue/config';
 import TabMenu from 'primevue/tabmenu';
 import InputText from 'primevue/inputtext';
+import Carousel from 'primevue/carousel';
 
 
 import 'primevue/resources/themes/lara-light-indigo/theme.css';
@@ -19,6 +20,7 @@ app.use(PrimeVue);
 
 app.component('TabMenu', TabMenu);
 app.component('InputText', InputText);
+app.component('CarouselList', Carousel);
 
 
 app.mount('#app')
