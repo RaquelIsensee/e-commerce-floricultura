@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="header">
-      <img alt="Floricultura logo" src="@/assets/logo-floricultura.png">
+      <img class="logo-header" alt="Floricultura logo" src="@/assets/logo-floricultura.png">
       <div>
         <span class="p-input-icon-left">
             <i class="pi pi-search"/>
@@ -35,7 +35,7 @@ body {
   background: #eff3f8;
 }
 
-img{
+.logo-header{
   height: 100px;
   position: absolute;
   top: 10px;

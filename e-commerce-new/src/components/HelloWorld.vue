@@ -4,6 +4,10 @@
           <template #item="slotProps">
             <div class="item-produto">
               <p>{{slotProps.data.nome}}</p>
+              <p>{{slotProps.data.precoUnidade}}</p>
+              <div v-if="slotProps.data.imagem">
+                <img :src="require('../assets/produtos/' + slotProps.data.imagem)">
+              </div>
             </div>
         </template>
       </CarouselList>
@@ -20,15 +24,15 @@ export default {
     return {
 
     produtos:[
-      {id: 1, nome: 'A'}, 
-      {id: 2, nome: 'B'}, 
-      {id: 3, nome: 'C'},
-      {id: 4, nome: 'D'}, 
-      {id: 5, nome: 'E'}, 
-      {id: 6, nome: 'F'},
-      {id: 7, nome: 'G'}, 
-      {id: 8, nome: 'H'}, 
-      {id: 9, nome: 'I'},
+      {id: 1, nome: 'Florzinha', precoUnidade: 'R$ 2,99'}, 
+      {id: 2, nome: 'lírio-do-brejo', precoUnidade: 'R$ 2,99', imagem: 'lirio-do-brejo.jpeg'}, 
+      {id: 3, nome: 'C', precoUnidade: 'R$ 2,99'},
+      {id: 4, nome: 'D', precoUnidade: 'R$ 2,99'}, 
+      {id: 5, nome: 'E', precoUnidade: 'R$ 2,99'}, 
+      {id: 6, nome: 'F', precoUnidade: 'R$ 2,99'},
+      {id: 7, nome: 'G', precoUnidade: 'R$ 2,99'}, 
+      {id: 8, nome: 'H', precoUnidade: 'R$ 2,99'}, 
+      {id: 9, nome: 'I', precoUnidade: 'R$ 2,99'},
     ]
     }
   }
