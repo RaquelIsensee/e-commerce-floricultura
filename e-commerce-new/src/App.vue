@@ -9,7 +9,7 @@
         </span>
       </div>
     </div>
-    <TabMenu :model="items" />
+    <TabMenu class="tab-menu-geral" :model="items" />
     <router-view/>
   </div>
 </template>
@@ -30,33 +30,16 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+body {
+  background: #eff3f8;
 }
 
 img{
-  border-radius: 50%;
-  width: 190px;
+  height: 100px;
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 10px;
+  left: 10px;
 }
 
 .header {
@@ -64,5 +47,11 @@ img{
   align-items: center;
   justify-content: center;
   height: 120px;
+  background-color: #fff;
 }
+.tab-menu-geral {
+  margin-bottom: 10px;
+}
+
+
 </style>

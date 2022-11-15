@@ -1,8 +1,8 @@
 <template>
  <div> 
-      <CarouselList :value="cars" :numVisible="3" :autoplayInterval="3000">
+      <CarouselList :value="produtos" :numVisible="3" :autoplayInterval="3000">
           <template #item="slotProps">
-            <div class="item-carro">
+            <div class="item-produto">
               <p>{{slotProps.data.nome}}</p>
             </div>
         </template>
@@ -19,7 +19,7 @@ export default {
   data(){
     return {
 
-    cars:[
+    produtos:[
       {id: 1, nome: 'A'}, 
       {id: 2, nome: 'B'}, 
       {id: 3, nome: 'C'},
@@ -51,7 +51,7 @@ li {
 a {
   color: #42b983;
 }
-.item-carro {
+.item-produto {
   padding: 100px; 
   box-shadow: 0 0 5px #ccc;
   border-radius: 10px;
